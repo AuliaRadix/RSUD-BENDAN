@@ -369,3 +369,79 @@ function setCopyrightYear() {
 $(document).ready(function () {
     setCopyrightYear();
 });
+
+/*------------------
+    PPID Interaction
+--------------------*/
+$(document).ready(function () {
+    // Inisialisasi Magnific Popup untuk gambar struktur
+    $('.ppid-zoomable').magnificPopup({
+        type: 'image',
+        closeOnContentClick: true,
+        mainClass: 'mfp-with-zoom',
+        zoom: {
+            enabled: true,
+            duration: 300
+        },
+        callbacks: {
+            elementParse: function (item) {
+                item.src = item.el.attr('src');
+            }
+        }
+    });
+});
+
+/*------------------
+    Back to Top Button
+--------------------*/
+$(window).on('scroll', function () {
+    if ($(this).scrollTop() > 300) {
+        $('#backToTopBtn').addClass('show');
+    } else {
+        $('#backToTopBtn').removeClass('show');
+    }
+});
+
+$('#backToTopBtn').on('click', function (e) {
+    e.preventDefault();
+    $('html').css('scroll-behavior', 'auto');
+    $('html, body').animate({ scrollTop: 0 }, 1000, function () {
+        $('html').css('scroll-behavior', '');
+    });
+});
+
+/*------------------
+    Info Card Animation
+--------------------*/
+$(window).scroll(function () {
+    $('.info-card').each(function () {
+        var imagePos = $(this).offset().top;
+        var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow + 600) {
+            $(this).css({
+                'opacity': '1',
+                'transform': 'translateY(0)',
+                'transition': 'all 0.6s ease-out'
+            });
+        }
+    });
+});
+
+document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', () => {
+        const faqItem = button.parentElement;
+
+        // Tutup yang lain (accordion mode)
+        document.querySelectorAll('.faq-item').forEach(item => {
+            if (item !== faqItem) {
+                item.classList.remove('open');
+                item.querySelector('.faq-question').classList.remove('active');
+            }
+        });
+
+        // Toggle current
+        faqItem.classList.toggle('open');
+        button.classList.toggle('active');
+    });
+});
+
