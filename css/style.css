@@ -1327,8 +1327,8 @@ Hero
 -----------------------*/
 
 .breadcrumb-option {
-	padding-top: 70px;
-	padding-bottom: 70px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 .breadcrumb__text h2 {
@@ -2832,9 +2832,9 @@ iframe {
 }
 
 .info-card__icon {
-	width: 80px;
-	height: 80px;
-	margin: 0 auto 25px;
+	width: 200px;
+	height: 200px;
+	margin: 0 auto 0px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -3412,3 +3412,4 @@ iframe {
 		font-size: 15px;
 	}
 }
+
