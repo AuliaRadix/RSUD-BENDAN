@@ -445,5 +445,55 @@ document.querySelectorAll('.faq-question').forEach(button => {
     });
 });
 
+/*------------------
+    3D Carousel Logic
+--------------------*/
+$(document).ready(function() {
+    const items = $('.carousel-3d-item');
+    let currentIndex = 2; // Index item tengah (item-3)
+
+    function updateCarousel() {
+        items.removeClass('item-1 item-2 item-3 item-4 item-5 active');
+        
+        items.each(function(index) {
+            let pos = (index - currentIndex + 5) % 5 + 1;
+            $(this).addClass('item-' + pos);
+            if (pos === 3) $(this).addClass('active');
+        });
+    }
+
+    $('.carousel-3d-next').on('click', function() {
+        currentIndex = (currentIndex + 1) % 5;
+        updateCarousel();
+    });
+
+    $('.carousel-3d-prev').on('click', function() {
+        currentIndex = (currentIndex - 1 + 5) % 5;
+        updateCarousel();
+    });
+
+    // --- FITUR GERAK OTOMATIS (AUTOPLAY) ---
+    // Mengatur agar slider berpindah setiap 3 detik
+    let autoRotate = setInterval(() => {
+        $('.carousel-3d-next').click(); 
+    }, 3000); 
+
+    // Fitur Pause saat Mouse Hover (Opsional)
+    // Slider berhenti saat kursor diarahkan ke poster agar pengunjung bisa membaca
+    $('.carousel-3d-container').hover(
+        function() {
+            clearInterval(autoRotate); // Berhenti saat mouse di atas slider
+        },
+        function() {
+            // Mulai kembali saat mouse keluar
+            autoRotate = setInterval(() => {
+                $('.carousel-3d-next').click();
+            }, 3000);
+        }
+    );
+});
+
+
+
 
 
