@@ -772,21 +772,58 @@ Hero
 .nav-buttons {
 	position: absolute;
 	top: 50%;
-	width: 100%;
+	left: 0;
+	right: 0;
 	display: flex;
 	justify-content: space-between;
+	padding: 0 50px;
 	transform: translateY(-50%);
+	z-index: 10;
+	pointer-events: none;
 }
 
+/* Button */
 .nav-buttons button {
-	background-color: rgba(0, 0, 0, 0.5);
-	color: white;
+	pointer-events: auto;
+	background: #13a2b7;
+	color: #fff;
 	border: none;
-	padding: 10px;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
 	cursor: pointer;
+	font-size: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.3s ease;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Hover effect */
+.nav-buttons button:hover {
+	background: #0e8fa1;
+	transform: scale(1.15);
+	box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+}
 
+/* Active click */
+.nav-buttons button:active {
+	transform: scale(0.95);
+}
+
+/* Mobile adjustment */
+@media (max-width: 768px) {
+	.nav-buttons {
+		padding: 0 20px;
+	}
+
+	.nav-buttons button {
+		width: 40px;
+		height: 40px;
+		font-size: 18px;
+	}
+}
 
 /*---------------------
   Choose Us
@@ -2776,6 +2813,26 @@ iframe {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	opacity: 0;
+	transform: translateY(20px);
+}
+
+.info-card.visible {
+	opacity: 1;
+	transform: translateY(0);
+	animation: slideInUp 0.6s ease-out forwards;
+}
+
+@keyframes slideInUp {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
 
 .info-card:hover {
@@ -3021,13 +3078,13 @@ iframe {
 ========================= */
 
 .misi__list {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
 }
 
 .misi__list li {
-    list-style: none;
+	list-style: none;
 }
 
 
@@ -3373,132 +3430,145 @@ iframe {
    Infinite 3D Carousel Style
 ========================= */
 .carousel-3d-container {
-    position: relative;
-    height: 450px;
-    width: 100%;
-    perspective: 1000px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+	position: relative;
+	height: 450px;
+	width: 100%;
+	perspective: 1000px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
 }
 
 .carousel-3d {
-    position: relative;
-    width: 250px; 
-    height: 350px;
-    transform-style: preserve-3d;
-    transition: transform 0.5s ease-in-out;
+	position: relative;
+	width: 250px;
+	height: 350px;
+	transform-style: preserve-3d;
+	transition: transform 0.5s ease-in-out;
 }
 
 .carousel-3d-item {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-    transition: all 0.5s ease-in-out;
-    cursor: pointer;
-    background: #ccc;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	border-radius: 15px;
+	overflow: hidden;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+	transition: all 0.5s ease-in-out;
+	cursor: pointer;
+	background: #ccc;
 }
 
 .carousel-3d-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 /* 3D Positions */
 /* Item 1 (Far Left) */
 .item-1 {
-    transform: translateX(-180%) scale(0.7) rotateY(35deg);
-    z-index: 1;
-    opacity: 0.4;
+	transform: translateX(-180%) scale(0.7) rotateY(35deg);
+	z-index: 1;
+	opacity: 0.4;
 }
 
 /* Item 2 (Left) */
 .item-2 {
-    transform: translateX(-100%) scale(0.85) rotateY(20deg);
-    z-index: 2;
-    opacity: 0.7;
+	transform: translateX(-100%) scale(0.85) rotateY(20deg);
+	z-index: 2;
+	opacity: 0.7;
 }
 
 /* Item 3 (Center - Active) */
 .item-3 {
-    transform: translateX(0) scale(1.1);
-    z-index: 5;
-    opacity: 1;
-    box-shadow: 0 15px 35px rgba(19, 162, 183, 0.4);
+	transform: translateX(0) scale(1.1);
+	z-index: 5;
+	opacity: 1;
+	box-shadow: 0 15px 35px rgba(19, 162, 183, 0.4);
 }
 
 /* Item 4 (Right) */
 .item-4 {
-    transform: translateX(100%) scale(0.85) rotateY(-20deg);
-    z-index: 2;
-    opacity: 0.7;
+	transform: translateX(100%) scale(0.85) rotateY(-20deg);
+	z-index: 2;
+	opacity: 0.7;
 }
 
 /* Item 5 (Far Right) */
 .item-5 {
-    transform: translateX(180%) scale(0.7) rotateY(-35deg);
-    z-index: 1;
-    opacity: 0.4;
+	transform: translateX(180%) scale(0.7) rotateY(-35deg);
+	z-index: 1;
+	opacity: 0.4;
 }
 
 /* Controls */
 .carousel-3d-controls {
-    position: absolute;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 50px;
-    z-index: 10;
+	position: absolute;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 50px;
+	z-index: 10;
 }
 
 .carousel-3d-controls button {
-    background: #13a2b7;
-    color: #fff;
-    border: none;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 0.3s;
-    font-size: 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+	background: #13a2b7;
+	color: #fff;
+	border: none;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: 0.3s;
+	font-size: 20px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .carousel-3d-controls button:hover {
-    background: #178f8a;
-    transform: scale(1.1);
+	background: #178f8a;
+	transform: scale(1.1);
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-    .carousel-3d-container { height: 350px; }
-    .carousel-3d { width: 180px; height: 260px; }
-    .carousel-3d-controls { padding: 0 10px; }
-    .item-1, .item-5 { display: none; } 
+	.carousel-3d-container {
+		height: 350px;
+	}
+
+	.carousel-3d {
+		width: 180px;
+		height: 260px;
+	}
+
+	.carousel-3d-controls {
+		padding: 0 10px;
+	}
+
+	.item-1,
+	.item-5 {
+		display: none;
+	}
 }
 
 /* =========================
    alur Page Styles
 ========================= */
 .alur-img {
-    max-width: 100%;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-    margin-bottom: 20px;
+	max-width: 100%;
+	border-radius: 12px;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+	margin-bottom: 20px;
 }
 
 .about__text h5 {
-    margin-top: 25px;
-    font-weight: 600;
+	margin-top: 25px;
+	font-weight: 600;
 }
 
 .about__text ul {
-    padding-left: 18px;
+	padding-left: 18px;
 }

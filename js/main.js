@@ -204,12 +204,6 @@
     $("select").niceSelect();
     $(".datepicker").datepicker({ minDate: 0 });
 
-    // Slider Navigation Buttons
-    const prevButton = document.querySelector('.slider-btn-prev');
-    const nextButton = document.querySelector('.slider-btn-next');
-    if (prevButton) prevButton.addEventListener('click', prevSlide);
-    if (nextButton) nextButton.addEventListener('click', nextSlide);
-
     // Service Modal Opening - Click on service cards
     document.querySelectorAll('.service-card[data-modal]').forEach(card => {
         card.addEventListener('click', function (e) {
@@ -239,45 +233,91 @@
 /*--------------------------
     Background Slider (Global)
 ----------------------------*/
-let currentSlide = 0;
-let slideInterval;
+const slider = document.getElementById('slider');
+let slides = document.querySelectorAll('.slide');
+const prevBtn = document.querySelector('.slider-btn-prev');
+const nextBtn = document.querySelector('.slider-btn-next');
 
-function showSlide(index) {
-    const slides = document.querySelectorAll('.slide');
-    const slider = document.querySelector('.slider');
-    if (!slider || slides.length === 0) return;
+let index = 1;
+let slideWidth;
 
-    if (index >= slides.length) currentSlide = 0;
-    else if (index < 0) currentSlide = slides.length - 1;
-    else currentSlide = index;
-    slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+// CLONE
+const firstClone = slides[0].cloneNode(true);
+const lastClone = slides[slides.length - 1].cloneNode(true);
+
+firstClone.id = 'first-clone';
+lastClone.id = 'last-clone';
+
+slider.appendChild(firstClone);
+slider.prepend(lastClone);
+
+// UPDATE slides SETELAH CLONE
+slides = document.querySelectorAll('.slide');
+
+// INIT
+function initSlider() {
+    slideWidth = slides[0].clientWidth;
+    slider.style.transition = 'none';
+    slider.style.transform = `translateX(${-slideWidth * index}px)`;
 }
 
-function prevSlide() {
-    showSlide(currentSlide - 1);
-    resetSlideTimer();
-}
-
-function nextSlide() {
-    showSlide(currentSlide + 1);
-    resetSlideTimer();
-}
-
-function startSlideTimer() {
-    slideInterval = setInterval(() => {
-        showSlide(currentSlide + 1);
-    }, 5000); // Slide otomatis setiap 5 detik
-}
-
-function resetSlideTimer() {
-    clearInterval(slideInterval);
-    startSlideTimer();
-}
-
-// Mulai slider otomatis saat halaman dimuat
-document.addEventListener("DOMContentLoaded", function () {
-    startSlideTimer();
+window.addEventListener('load', () => {
+    initSlider();
+    startAutoSlide();
 });
+
+// NEXT
+nextBtn.addEventListener('click', () => {
+    if (index >= slides.length - 1) return;
+    index++;
+    slider.style.transition = 'transform 0.5s ease';
+    slider.style.transform = `translateX(${-slideWidth * index}px)`;
+    resetAutoSlide();
+});
+
+// PREV
+prevBtn.addEventListener('click', () => {
+    if (index <= 0) return;
+    index--;
+    slider.style.transition = 'transform 0.5s ease';
+    slider.style.transform = `translateX(${-slideWidth * index}px)`;
+    resetAutoSlide();
+});
+
+// CLONE RESET
+slider.addEventListener('transitionend', () => {
+    if (slides[index].id === 'first-clone') {
+        slider.style.transition = 'none';
+        index = 1;
+        slider.style.transform = `translateX(${-slideWidth * index}px)`;
+    }
+
+    if (slides[index].id === 'last-clone') {
+        slider.style.transition = 'none';
+        index = slides.length - 2;
+        slider.style.transform = `translateX(${-slideWidth * index}px)`;
+    }
+});
+
+// AUTO SLIDE
+let autoSlide;
+
+function startAutoSlide() {
+    autoSlide = setInterval(() => {
+        index++;
+        slider.style.transition = 'transform 0.5s ease';
+        slider.style.transform = `translateX(${-slideWidth * index}px)`;
+    }, 4000);
+}
+
+function resetAutoSlide() {
+    clearInterval(autoSlide);
+    startAutoSlide();
+}
+
+// RESPONSIVE
+window.addEventListener('resize', initSlider);
+
 
 /*--------------------------
     Google Drive Direct Download Links
@@ -392,40 +432,43 @@ $(document).ready(function () {
 });
 
 /*------------------
-    Back to Top Button
+    Back to Top Button (Throttled)
 --------------------*/
+let scrollTimeout;
 $(window).on('scroll', function () {
-    if ($(this).scrollTop() > 300) {
-        $('#backToTopBtn').addClass('show');
-    } else {
-        $('#backToTopBtn').removeClass('show');
+    if (!scrollTimeout) {
+        scrollTimeout = setTimeout(() => {
+            if ($(window).scrollTop() > 300) {
+                $('#backToTopBtn').addClass('show');
+            } else {
+                $('#backToTopBtn').removeClass('show');
+            }
+            scrollTimeout = null;
+        }, 100);
     }
 });
 
 $('#backToTopBtn').on('click', function (e) {
     e.preventDefault();
-    $('html').css('scroll-behavior', 'auto');
-    $('html, body').animate({ scrollTop: 0 }, 1000, function () {
-        $('html').css('scroll-behavior', '');
-    });
+    $('html, body').animate({ scrollTop: 0 }, 1000);
 });
 
 /*------------------
-    Info Card Animation
+    Info Card Animation (Optimized - Intersection Observer)
 --------------------*/
-$(window).scroll(function () {
-    $('.info-card').each(function () {
-        var imagePos = $(this).offset().top;
-        var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow + 600) {
-            $(this).css({
-                'opacity': '1',
-                'transform': 'translateY(0)',
-                'transition': 'all 0.6s ease-out'
-            });
-        }
+if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                $(entry.target).addClass('visible');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.info-card').forEach(card => {
+        observer.observe(card);
     });
-});
+}
 
 document.querySelectorAll('.faq-question').forEach(button => {
     button.addEventListener('click', () => {
@@ -446,53 +489,64 @@ document.querySelectorAll('.faq-question').forEach(button => {
 });
 
 /*------------------
-    3D Carousel Logic
+    3D Carousel Logic (Optimized)
 --------------------*/
-$(document).ready(function() {
+$(document).ready(function () {
     const items = $('.carousel-3d-item');
     let currentIndex = 2; // Index item tengah (item-3)
+    let autoRotate = null;
+    let isVisible = true;
 
     function updateCarousel() {
         items.removeClass('item-1 item-2 item-3 item-4 item-5 active');
-        
-        items.each(function(index) {
+        items.each(function (index) {
             let pos = (index - currentIndex + 5) % 5 + 1;
             $(this).addClass('item-' + pos);
             if (pos === 3) $(this).addClass('active');
         });
     }
 
-    $('.carousel-3d-next').on('click', function() {
+    $('.carousel-3d-next').on('click', function () {
         currentIndex = (currentIndex + 1) % 5;
         updateCarousel();
     });
 
-    $('.carousel-3d-prev').on('click', function() {
+    $('.carousel-3d-prev').on('click', function () {
         currentIndex = (currentIndex - 1 + 5) % 5;
         updateCarousel();
     });
 
-    // --- FITUR GERAK OTOMATIS (AUTOPLAY) ---
-    // Mengatur agar slider berpindah setiap 3 detik
-    let autoRotate = setInterval(() => {
-        $('.carousel-3d-next').click(); 
-    }, 3000); 
-
-    // Fitur Pause saat Mouse Hover (Opsional)
-    // Slider berhenti saat kursor diarahkan ke poster agar pengunjung bisa membaca
-    $('.carousel-3d-container').hover(
-        function() {
-            clearInterval(autoRotate); 
-        },
-        function() {
-            autoRotate = setInterval(() => {
-                $('.carousel-3d-next').click();
-            }, 3000);
+    // Pause autoplay ketika halaman tidak terlihat (tab tidak aktif)
+    document.addEventListener('visibilitychange', () => {
+        if (document.hidden) {
+            clearInterval(autoRotate);
+            isVisible = false;
+        } else {
+            isVisible = true;
+            startAutoPlay();
         }
-    );
+    });
+
+    function startAutoPlay() {
+        if (autoRotate) clearInterval(autoRotate);
+        autoRotate = setInterval(() => {
+            if (isVisible) {
+                currentIndex = (currentIndex + 1) % 5;
+                updateCarousel();
+            }
+        }, 3000);
+    }
+
+    // Start autoplay on load
+    startAutoPlay();
+
+    // Pause saat hover
+    $('.carousel-3d-container').on('mouseenter', function () {
+        clearInterval(autoRotate);
+    }).on('mouseleave', function () {
+        startAutoPlay();
+    });
 });
-
-
 
 
 
