@@ -309,9 +309,7 @@ html {
 
 .header__top__left li a {
 	color: #ffffff;
-	/* warna tetap putih */
 	text-decoration: none;
-	/* hilangkan underline */
 }
 
 .header__top__left li:last-child {
@@ -433,7 +431,6 @@ html {
 	position: relative;
 }
 
-/* Chevron icon styling untuk header menu */
 .header__menu ul li a .bi-chevron-down {
 	display: inline-block;
 	margin-left: 6px;
@@ -472,22 +469,18 @@ html {
 	-o-transition: background 0.3s;
 }
 
-/* Menjadikan item dropdown sebagai referensi posisi untuk sub-menu */
 .header__menu ul li .dropdown li {
 	position: relative;
 }
 
-/* Mengatur posisi dan menyembunyikan sub-menu (dropdown level 2) */
 .header__menu ul li .dropdown .dropdown {
 	position: absolute;
 	left: 100%;
-	/* Muncul di sebelah kanan menu induk */
 	top: 0;
 	opacity: 0;
 	visibility: hidden;
 }
 
-/* Menampilkan sub-menu saat item induknya di-hover */
 .header__menu ul li .dropdown li:hover>.dropdown {
 	opacity: 1;
 	visibility: visible;
@@ -562,19 +555,6 @@ html {
 	border-bottom: 1px solid #f2f2f2;
 }
 
-/* .sidebar__logo {
-	display: flex;
-	align-items: center;
-}
-
-.sidebar__logo a {
-	display: block;
-}
-
-.sidebar__logo img {
-	max-width: 50px;
-} */
-
 .sidebar__close {
 	width: 35px;
 	height: 35px;
@@ -633,7 +613,6 @@ html {
 	position: relative;
 }
 
-/* Chevron icon styling untuk sidebar menu */
 .sidebar__menu ul li a .bi-chevron-down {
 	display: inline-block;
 	margin-left: 6px;
@@ -676,7 +655,6 @@ html {
 	padding: 8px 0;
 }
 
-/* Animation untuk dropdown membuka */
 @keyframes slideDown {
 	from {
 		max-height: 0;
@@ -691,7 +669,6 @@ html {
 	}
 }
 
-/* Animation untuk dropdown menutup */
 @keyframes slideUp {
 	from {
 		max-height: 1000px;
@@ -728,7 +705,6 @@ html {
 .sidebar__menu ul li ul.dropdown {
 	background: #fafafa;
 	display: none;
-	/* Controlled by JS */
 	padding: 5px 0;
 }
 
@@ -839,12 +815,10 @@ Hero
 
 .chooseus__item img {
 	transition: transform 0.3s ease;
-	/* Menambahkan transisi smooth untuk efek zoom */
 }
 
 .chooseus__item:hover img {
 	transform: scale(1.1);
-	/* Perbesar gambar saat cursor diarahkan */
 }
 
 /*---------------------
@@ -873,7 +847,6 @@ Hero
 
 .services__item {
 	text-align: center;
-	/* Pusatkan semua konten di dalam services__item */
 	background: #ffffff;
 	padding: 30px 20px 20px 20px;
 	margin-bottom: 30px;
@@ -1280,7 +1253,6 @@ Hero
 
 .footer__map iframe {
 	height: 250px;
-	/* width: 200px; */
 }
 
 .footer__copyright {
@@ -1341,11 +1313,8 @@ Hero
 	list-style: none;
 	color: #ffffff;
 	font-size: 13px;
-	/* PENTING: pastikan font-size ada */
 	line-height: 1.6;
-	/* biar teks turun normal */
 	display: flex;
-	/* ikon & teks sejajar */
 	align-items: flex-start;
 	gap: 8px;
 }
@@ -1486,31 +1455,6 @@ Hero
 	margin-right: 0;
 }
 
-/*---------------------
-  Services
------------------------*/
-
-/*---------------------
-  Pricing
------------------------*/
-
-/*---------------------
-  Doctor
------------------------*/
-
-/*---------------------
-    Blog
------------------------*/
-
-/*---------------------
-  Blog Details
------------------------*/
-
-/*---------------------
-  Contact
------------------------*/
-
-/*--------------------------------- Responsive Media Quaries -----------------------------*/
 
 @media only screen and (min-width: 1200px) {
 	.container {
@@ -2070,21 +2014,15 @@ Hero
 /* Memberikan ruang agar angka tetap di dalam dan teks sejajar */
 .about__list {
 	padding-left: 15px;
-	/* Memberikan ruang untuk angka */
 	margin-bottom: 25px;
 }
 
 .about__list li {
 	list-style-type: decimal;
-	/* Memastikan tipe penomoran angka */
 	padding-left: 10px;
-	/* Jarak antara angka dan teks */
 	margin-bottom: 12px;
-	/* Jarak antar poin list */
 	text-align: justify;
-	/* Agar teks rapi seperti di gambar */
 	display: list-item;
-	/* Memastikan elemen berperilaku sebagai list */
 }
 
 .about__list_document {
@@ -2099,7 +2037,6 @@ Hero
 .about__list_document a,
 .document-link {
 	color: #000000;
-	/* Sesuai warna p di style.css */
 	text-decoration: none;
 	transition: all 0.3s;
 	display: block;
@@ -2108,7 +2045,6 @@ Hero
 .about__list_document a i,
 .document-link i {
 	color: #13a2b7;
-	/* Warna Teal Utama dari style.css Anda */
 	margin-right: 10px;
 }
 
@@ -2116,14 +2052,12 @@ Hero
 .document-link:hover {
 	color: #13a2b7;
 	padding-left: 5px;
-	/* Efek geser sedikit saat hover */
 }
 
 .about__text .section-title h2 {
 	font-weight: 700;
 	text-transform: uppercase;
 	font-size: 28px;
-	/* Ukuran h2 yang lebih proporsional */
 }
 
 /* ========================================
@@ -2132,7 +2066,6 @@ Hero
 /* Custom Service Card Styles */
 .service-card {
 	padding: 0 !important;
-	/* Reset padding default template */
 	cursor: pointer;
 	overflow: hidden;
 	transition: transform 0.3s ease;
@@ -2145,7 +2078,6 @@ Hero
 .service-card:hover {
 	transform: translateY(-5px);
 	background: #fff !important;
-	/* Mencegah perubahan warna background default template */
 }
 
 .service-card__image img {
@@ -2650,14 +2582,11 @@ iframe {
 /* Gaya Tabel Tarif Spesifik */
 .tarif-container {
 	background-color: #f8f9fa;
-	/* bg-light */
 	border-left: 4px solid #13a2b7;
-	/* border-info */
 	padding: 1.5rem;
 	border-radius: 8px;
 	margin-top: 1.5rem;
 	box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-	/* shadow-sm */
 }
 
 .tarif-info-text {
@@ -2707,18 +2636,13 @@ iframe {
 .ppid__image-container {
 	background: #f8f9fa;
 	padding: 15px;
-	/* Padding dikurangi sedikit agar lebih compact */
 	border-radius: 15px;
 	border: 1px solid #eee;
 	max-width: 80%;
-	/* Mengatur lebar maksimal kontainer menjadi 80% */
 	margin: 0 auto;
-	/* Menjaga agar kontainer tetap di tengah */
 	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-	/* Shadow lebih halus */
 }
 
-/* Responsif untuk layar HP agar ukurannya kembali penuh */
 @media (max-width: 767px) {
 	.ppid__image-container {
 		max-width: 100%;
@@ -2736,8 +2660,6 @@ iframe {
 }
 
 /* --- PPID Split Layout Styles --- */
-
-/* Wrapper Gambar agar memenuhi tinggi kolom */
 .ppid__image-container {
 	background: #f8f9fa;
 	padding: 10px;
@@ -2747,26 +2669,18 @@ iframe {
 	align-items: center;
 	justify-content: center;
 	height: 100%;
-	/* Memaksa container mengikuti tinggi kolom flex */
 }
 
-/* Container gambar lebar */
-
-/* Gambar mengisi seluruh area kolom */
-
-/* Gambar mengikuti tinggi container tanpa gepeng */
 .ppid__image-container img {
 	width: 100%;
 	height: 100%;
 	object-fit: contain;
-	/* Menjaga rasio gambar agar tidak terpotong */
 	background: #fff;
 }
 
 /* Styling Box Teks di sebelah kanan */
 .ppid__content-box {
 	padding-left: 50px;
-	/* Jarak antara gambar lebar dan teks */
 }
 
 .ppid__description p {
@@ -3031,7 +2945,6 @@ iframe {
 .zona-list li {
 	display: flex;
 	align-items: flex-start;
-	/* ikon sejajar teks atas */
 	gap: 18px;
 	background: #ffffff;
 	padding: 20px 24px;
@@ -3115,7 +3028,6 @@ iframe {
 .kanal-item {
 	display: flex;
 	align-items: flex-start;
-	/* sejajar atas */
 	gap: 16px;
 	background: #ffffff;
 	padding: 18px 22px;
@@ -3135,7 +3047,6 @@ iframe {
 	width: 44px;
 	height: 44px;
 	min-width: 44px;
-	/* konsisten primary */
 	color: #ffffff;
 	border-radius: 50%;
 	display: flex;
@@ -3468,7 +3379,7 @@ iframe {
 
 .carousel-3d {
     position: relative;
-    width: 250px; /* Lebar poster portrait */
+    width: 250px; 
     height: 350px;
     transform-style: preserve-3d;
     transition: transform 0.5s ease-in-out;
@@ -3564,7 +3475,7 @@ iframe {
     .carousel-3d-container { height: 350px; }
     .carousel-3d { width: 180px; height: 260px; }
     .carousel-3d-controls { padding: 0 10px; }
-    .item-1, .item-5 { display: none; } /* Sembunyikan poster terjauh di mobile */
+    .item-1, .item-5 { display: none; } 
 }
 
 /* =========================

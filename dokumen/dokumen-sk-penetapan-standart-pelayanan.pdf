@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<!--[if IE 9]>
+<html class="no-js lt-ie10" lang="en"> <![endif]-->
+<!--[if gt IE 9]>
+<!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+        <title>Rumah Sakit Umum Daerah Bendan Kota Pekalongan - Website Resmi Rumah Sakit Umum Daerah Bendan Kota Pekalongan - RSUD BENDAN</title>
+        <meta charset="utf-8">
+        <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="robots" content="index, follow">
+        <meta name="description" content="Website Resmi Rumah Sakit Umum Daerah Bendan Kota Pekalongan">
+        <meta name="author" content="Anggoro Triantoko" />
+        <meta name="keywords" content="Rumah sakit umum daerah bendan kota pekalongan,Rsud bendan kota pekalongan,Kota pekalongan,Pekalongan,Pekalongan kota,Berita,Pemerintahan,Pemerintah,Kota batik,Batik,Unesco pekalongan,Smart city,Smart city pekalongan, Anggoro Triantoko" />
+          
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PWRSTSW');</script>
+		<!-- End Google Tag Manager -->
+		
+        <!-- Facebook Open Graph -->
+        <meta property="og:image" content="https://rsudbendan.pekalongankota.go.id/template/frontend/img/logo.png" />
+        <meta property="og:title" content="Rumah Sakit Umum Daerah Bendan Kota Pekalongan - Website Resmi Rumah Sakit Umum Daerah Bendan Kota Pekalongan - RSUD BENDAN" />
+        <meta property="og:url" content="https://rsudbendan.pekalongankota.go.id/" />
+        <meta property="og:description" content="Website Resmi Rumah Sakit Umum Daerah Bendan Kota Pekalongan" />
+        <meta property="og:type" content="article" />
+        <meta property="og:image:secure_url" content="https://rsudbendan.pekalongankota.go.id/template/frontend/img/logo.png" />
+
+        <!-- Twitter Card -->  
+        <meta name="twitter:card" content="Rumah Sakit Umum Daerah Bendan Kota Pekalongan" />
+        <meta name="twitter:site" content="rsudbendan" />
+        <meta name="twitter:title" content="Rumah Sakit Umum Daerah Bendan Kota Pekalongan" />
+        <meta name="twitter:description" content="Website Resmi Rumah Sakit Umum Daerah Bendan Kota Pekalongan" />
+        <meta name="twitter:creator" content="rsudbendan" />
+        <meta name="twitter:image" content="https://rsudbendan.pekalongankota.go.id/template/frontend/img/logo.png" />
+        <meta name="twitter:domain" content="https://rsudbendan.pekalongankota.go.id/" />
+        <meta name="twitter:url" content="https://rsudbendan.pekalongankota.go.id/" />
+
+        <!-- Google Plus Meta Tag -->  
+        <meta itemprop="name" content="Rumah Sakit Umum Daerah Bendan Kota Pekalongan - Website Resmi Rumah Sakit Umum Daerah Bendan Kota Pekalongan - RSUD BENDAN" />
+        <meta itemprop="description" content="Website Resmi Rumah Sakit Umum Daerah Bendan Kota Pekalongan" />
+        <meta itemprop="image" content="https://rsudbendan.pekalongankota.go.id/template/frontend/img/logo.png" />
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="https://rsudbendan.pekalongankota.go.id/template/frontend/css/font-google.css" />
+        
+        <!-- Css -->
+        <link rel="stylesheet" href="https://rsudbendan.pekalongankota.go.id/template/frontend/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://rsudbendan.pekalongankota.go.id/template/frontend/css/font-icons.css" />
+        <link rel="stylesheet" href="https://rsudbendan.pekalongankota.go.id/template/frontend/css/sweetalert/sweetalert.css" />
+        <link rel="stylesheet" href="https://rsudbendan.pekalongankota.go.id/template/frontend/css/style.css" />
+        <link rel="stylesheet" href="https://rsudbendan.pekalongankota.go.id/template/frontend/css/custom.css" />
+
+        <!-- Favicons -->
+        <link rel="shortcut icon" type="image/png" href="https://rsudbendan.pekalongankota.go.id/template/frontend/img/favicon.png">
+        <link rel="apple-touch-icon" type="image/png" href="https://rsudbendan.pekalongankota.go.id/template/frontend/img/apple-touch-icon.png">
+        <link rel="apple-touch-icon" type="image/png" sizes="72x72" href="https://rsudbendan.pekalongankota.go.id/template/frontend/img/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" type="image/png" sizes="114x114" href="https://rsudbendan.pekalongankota.go.id/template/frontend/img/apple-touch-icon-114x114.png">
+
+        <!-- Scripts -->
+        <script src="https://rsudbendan.pekalongankota.go.id/template/frontend/js/lazysizes.min.js"></script>
+        <script src="https://rsudbendan.pekalongankota.go.id/template/frontend/js/jquery.min.js"></script>
+        <script src="https://rsudbendan.pekalongankota.go.id/template/frontend/js/bootstrap.min.js"></script>
+        <script src="https://code.responsivevoice.org/responsivevoice.js?key=bncINcEj"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-MG78STVQKJ"></script>
+        <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-MG78STVQKJ');</script>
+		<script type="text/javascript">
+		var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+		(function(){
+		var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+		s1.async=true;
+		s1.src='https://embed.tawk.to/612dd2bad6e7610a49b2d688/1fedfuadq';
+		s1.charset='UTF-8';
+		s1.setAttribute('crossorigin','*');
+		s0.parentNode.insertBefore(s1,s0);
+		})();
+		</script>
+    </head>
+    <body class="bg-light style-default style-rounded">
+        
+        <div class="loader-mask">
+    <div class="loader">
+        <div></div>
+    </div>
+</div>        
+        <div class="content-overlay"></div>
+        
+        <header class="sidenav" id="sidenav">
+    <div class="sidenav__close">
+        <button class="sidenav__close-button" id="sidenav__close-button" aria-label="close sidenav">
+            <i class="ui-close sidenav__close-icon"></i>
+        </button>
+    </div>
+    <nav class="sidenav__menu-container">
+        <ul class="sidenav__menu" role="menubar">
+            <li><a href="https://rsudbendan.pekalongankota.go.id/index.html" class="sidenav__menu-url">BERANDA</a></li><li><a href="#" class="sidenav__menu-url">PROFIL</a><button class="sidenav__menu-toggle" aria-haspopup="true" aria-label="Open dropdown"><i class="ui-arrow-down"></i></button><ul class="sidenav__menu-dropdown"><li><a href="https://rsudbendan.pekalongankota.go.id/halaman/profil-rsud-bendan.html" class="sidenav__menu-url">PROFIL RSUD BENDAN</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/halaman/alamat-dan-sejarah-rsud-bendan.html" class="sidenav__menu-url">SEJARAH RSUD BENDAN</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/upload/file/images_20250602015927.jpg" class="sidenav__menu-url">PROFIL STRUKTURAL</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/halaman/struktur-organisasi.html" class="sidenav__menu-url">STRUKTUR ORGANISASI</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/upload/file/images_20250507110239.jpg" class="sidenav__menu-url">VISI DAN MISI</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/halaman/tugas--fungsi.html" class="sidenav__menu-url">TUGAS DAN FUNGSI</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/halaman/penghargaan-2765.html" class="sidenav__menu-url">PENGHARGAAN</a></li></ul></li><li><a href="#" class="sidenav__menu-url">PELAYANAN</a><button class="sidenav__menu-toggle" aria-haspopup="true" aria-label="Open dropdown"><i class="ui-arrow-down"></i></button><ul class="sidenav__menu-dropdown"><li><a href="https://rsudbendan.pekalongankota.go.id/halaman/standart-pelayanan-7061.html" class="sidenav__menu-url">STANDART PELAYANAN</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/halaman/maklumat-pelayanan.html" class="sidenav__menu-url">MAKLUMAT PELAYANAN</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/halaman/instalasi-gawat-darurat-igd.html" class="sidenav__menu-url">PELAYANAN INSTALASI GAWAT DARURAT</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/halaman/pelayanan-rawat-jalan.html" class="sidenav__menu-url">PELAYANAN RAWAT JALAN</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/halaman/pelayanan-klinik-eksekutif.html" class="sidenav__menu-url">PELAYANAN EKSEKUTIF</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/halaman/-pelayanan-rawat-inap.html" class="sidenav__menu-url">PELAYANAN RAWAT INAP</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/halaman/pelayanan-penunjang.html" class="sidenav__menu-url">PELAYANAN PENUNJANG</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/download/jadwal-dokter.html" class="sidenav__menu-url">JADWAL DOKTER</a></li></ul></li><li><a href="#" class="sidenav__menu-url">PENGADUAN</a><button class="sidenav__menu-toggle" aria-haspopup="true" aria-label="Open dropdown"><i class="ui-arrow-down"></i></button><ul class="sidenav__menu-dropdown"><li><a href="https://prod.lapor.go.id/" class="sidenav__menu-url">SP4N LAPOR</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/halaman/sk-pengaduan.html" class="sidenav__menu-url">SK TIM PENGADUAN</a></li><li><a href="#" class="sidenav__menu-url">FORM PENGADUAN</a><button class="sidenav__menu-toggle" aria-haspopup="true" aria-label="Open dropdown"><i class="ui-arrow-down"></i></button><ul class="sidenav__menu-dropdown"><li><a href="https://rsudbendan.pekalongankota.go.id/" class="sidenav__menu-url">FORM PENERIMAAN PENGADUAN</a></li><li><a href="https://rsudbendan.pekalongankota.go.id//upload/file/file_20241014080603.pdf" class="sidenav__menu-url">FORM PENELAAHAN DAN PENGKLASIFIKASIAN PENGADUAN</a></li><li><a href="https://rsudbendan.pekalongankota.go.id//upload/file/file_20241014080704.pdf" class="sidenav__menu-url">FORM PENYALURAN PENGADUAN</a></li><li><a href="https://rsudbendan.pekalongankota.go.id//upload/file/file_20241014080751.pdf" class="sidenav__menu-url">FORM PENYELESAIAN PENGADUAN</a></li></ul></li><li><a href="https://rsudbendan.pekalongankota.go.id//upload/file/file_20230712034738.pdf" class="sidenav__menu-url">ALUR PENGADUAN</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/halaman/kanal-pengaduan-2932.html" class="sidenav__menu-url">KANAL PENGADUAN</a></li></ul></li><li><a href="#" class="sidenav__menu-url">PPID</a><button class="sidenav__menu-toggle" aria-haspopup="true" aria-label="Open dropdown"><i class="ui-arrow-down"></i></button><ul class="sidenav__menu-dropdown"><li><a href="https://rsudbendan.pekalongankota.go.id/halaman/profil-ppid-1681.html" class="sidenav__menu-url">PROFIL PPID</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/ppid/index.html" class="sidenav__menu-url">INFORMASI PUBLIK</a></li><li><a href="https://bendanpublic.pekalongankota.go.id/pengaduan/" class="sidenav__menu-url">FORM PERMOHONAN INFORMASI</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/pusaka/index.html" class="sidenav__menu-url">Statistik Sektoral</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/halaman/tata-cara-pengajuan-informasi-dan-keberatan.html" class="sidenav__menu-url">ALUR PERMINTAAN INFORMASI</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/halaman/maklumat-pelayanan-4722.html" class="sidenav__menu-url">MAKLUMAT PELAYANAN PPID</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/datacovid19/index.html" class="sidenav__menu-url">INFORMASI DATA COVID</a></li><li><a href="#" class="sidenav__menu-url">DIK DAN DIP</a><button class="sidenav__menu-toggle" aria-haspopup="true" aria-label="Open dropdown"><i class="ui-arrow-down"></i></button><ul class="sidenav__menu-dropdown"><li><a href="https://rsudbendan.pekalongankota.go.id/download/daftar-informasi-publik.html" class="sidenav__menu-url">DAFTAR INFORMASI PUBLIK 2025</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/download/sk-dik-2025.html" class="sidenav__menu-url">DAFTAR INFORMASI DI KECUALIKKAN TAHUN 2025</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/download/sk-dip-2024-8911.html" class="sidenav__menu-url">DAFTAR INFORMASI PUBLIK 2024</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/download/sk-dik-2024.html" class="sidenav__menu-url">DAFTAR INFORMASI DI KECUALIKKAN TAHUN 2024</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/download/sk-dik-2023.html" class="sidenav__menu-url">DAFTAR INFORMASI DI KECUALIKKAN TAHUN 2023</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/download/sk-dip-2023-1196.html" class="sidenav__menu-url">DAFTAR INFORMASI PUBLIK 2023</a></li></ul></li><li><a href="#" class="sidenav__menu-url">SPO LAYANAN INFORMASI PUBLIK</a><button class="sidenav__menu-toggle" aria-haspopup="true" aria-label="Open dropdown"><i class="ui-arrow-down"></i></button><ul class="sidenav__menu-dropdown"><li><a href="https://rsudbendan.pekalongankota.go.id/download/spo-pengumuman-informasi-publik-rsud-bendan.html" class="sidenav__menu-url">SPO PENGUMUMAN INFORMASI PUBLIK</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/download/spo-permintaan-informasi-publik-rsud-bendan.html" class="sidenav__menu-url">SPO PERMINTAAN INFORMASI PUBLIK</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/download/spo-pengajuan-keberatan-informasi-publik-rsud-bendan.html" class="sidenav__menu-url">SPO PENGAJUAN KEBERATAN PUBLIK</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/download/spo-penetapan-dan-pemutakhiran-daftar-informasi-publik-rsud-bendan.html" class="sidenav__menu-url">SPO PENETAPAN & PEMUTAKHIRAN DIP</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/download/spo-pendokumentasian-informasi-publik-rsud-bendan.html" class="sidenav__menu-url">SOP STANDAR PENDOKUMENTASIAN INFORMASI PUBLIK</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/download/spo-maklumat-pelayanan-informasi-publik.html" class="sidenav__menu-url">SOP STANDAR MAKLUMAT PELAYANAN</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/download/spo-pengujian-konsejuensi-informasi-publik-rsud-bendan.html" class="sidenav__menu-url">SPO PENGAJUAN KONSEKUENSI INFORMASI PUBLIK</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/download/spo-permintaan-informasi-bagi-masyarakat-penyadang-disabilitas-melalui-fitur-rekam-suara-rsud-bendan.html" class="sidenav__menu-url">SPO PERMINTAAN INFORMASI BAGI MASYARAKAT PENYADANG DISABILITAS</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/download/spo-fasilitas-sengketa-informasi-publik.html" class="sidenav__menu-url">SPO FASILITAS SENGKETA INFORMASI PUBLIK</a></li></ul></li><li><a href="#" class="sidenav__menu-url">LAPORAN</a><button class="sidenav__menu-toggle" aria-haspopup="true" aria-label="Open dropdown"><i class="ui-arrow-down"></i></button><ul class="sidenav__menu-dropdown"><li><a href="https://rsudbendan.pekalongankota.go.id/download/laporan-informasi-publik-tahun-2023.html" class="sidenav__menu-url">TAHUN 2023</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/download/laporan-informasi-publik-tahun-2024.html" class="sidenav__menu-url">TAHUN 2024</a></li></ul></li></ul></li><li><a href="#" class="sidenav__menu-url">INFORMASI</a><button class="sidenav__menu-toggle" aria-haspopup="true" aria-label="Open dropdown"><i class="ui-arrow-down"></i></button><ul class="sidenav__menu-dropdown"><li><a href="https://rsudbendan.pekalongankota.go.id/upload/file/images_20220826085642.jpg" class="sidenav__menu-url">PANDUAN BEMBI NAIK SI BEMO</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/halaman/alur-pendaftaran-pasien-.html" class="sidenav__menu-url">ALUR PENDAFTARAN PASIEN</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/halaman/tarif-pelayanan-rsud-bendan-pekalongan.html" class="sidenav__menu-url">TARIF PELAYANAN</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/download/indikator-mutu-2023.html" class="sidenav__menu-url">INDIKATOR MUTU 2023</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/download/indikator-mutu-2024.html" class="sidenav__menu-url">INDIKATOR MUTU 2024</a></li></ul></li><li><a href="#" class="sidenav__menu-url">RB</a><button class="sidenav__menu-toggle" aria-haspopup="true" aria-label="Open dropdown"><i class="ui-arrow-down"></i></button><ul class="sidenav__menu-dropdown"><li><a href="https://rsudbendan.pekalongankota.go.id/halaman/reformasi-birokrasi.html" class="sidenav__menu-url">REFORMASI BIROKRASI</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/halaman/program-kerja-zona-integritas.html" class="sidenav__menu-url">ZONA INTEGRITAS</a></li><li><a href="https://bendanpublic.pekalongankota.go.id/zona_integritas/" class="sidenav__menu-url">LAPOR (WBS)</a></li></ul></li><li><a href="#" class="sidenav__menu-url">SURVEI IKM</a><button class="sidenav__menu-toggle" aria-haspopup="true" aria-label="Open dropdown"><i class="ui-arrow-down"></i></button><ul class="sidenav__menu-dropdown"><li><a href="https://skm.pekalongankota.go.id/" class="sidenav__menu-url">SURVEY KEPUASAN MASYARAKAT</a></li><li><a href="#" class="sidenav__menu-url">LAPORAN SURVEY IKM PEMKOT 2023</a><button class="sidenav__menu-toggle" aria-haspopup="true" aria-label="Open dropdown"><i class="ui-arrow-down"></i></button><ul class="sidenav__menu-dropdown"><li><a href="https://rsudbendan.pekalongankota.go.id/download/semester-1-skm-pemkot-tahun-2023.html" class="sidenav__menu-url">SEMESTER 1</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/download/	semester-ii-skm-pemkot-tahun-2023.html" class="sidenav__menu-url">SEMESTER II</a></li></ul></li><li><a href="#" class="sidenav__menu-url">LAPORAN HASIL SURVEI 2023</a><button class="sidenav__menu-toggle" aria-haspopup="true" aria-label="Open dropdown"><i class="ui-arrow-down"></i></button><ul class="sidenav__menu-dropdown"><li><a href="https://rsudbendan.pekalongankota.go.id/download/laporan-hasil-survei-semester-i-tahun-2023.html" class="sidenav__menu-url">SEMESTER I</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/download/laporan-hasil-survei-semester-ii-tahun-2023.html" class="sidenav__menu-url">SEMESTER II</a></li></ul></li><li><a href="#" class="sidenav__menu-url">LAPORAN SURVEY IKM PEMKOT 2024</a><button class="sidenav__menu-toggle" aria-haspopup="true" aria-label="Open dropdown"><i class="ui-arrow-down"></i></button><ul class="sidenav__menu-dropdown"><li><a href="https://rsudbendan.pekalongankota.go.id/download/semester-1-skm-pemkot-tahun-2024.html" class="sidenav__menu-url">SEMESTER I</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/download/semester-ii-skm-pemkot-tahun-2024.html" class="sidenav__menu-url">SEMESTER II</a></li></ul></li><li><a href="#" class="sidenav__menu-url">LAPORAN HASIL SURVEI 2024</a><button class="sidenav__menu-toggle" aria-haspopup="true" aria-label="Open dropdown"><i class="ui-arrow-down"></i></button><ul class="sidenav__menu-dropdown"><li><a href="https://rsudbendan.pekalongankota.go.id/download/laporan-hasil-survei-semester-i-tahun-2024.html" class="sidenav__menu-url">SEMESTER I</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/download/laporan-hasil-survei-semester-ii-tahun-2024.html" class="sidenav__menu-url">SEMESTER II</a></li></ul></li><li><a href="#" class="sidenav__menu-url">LAPORAN SURVEY IKM PEMKOT 2025</a><button class="sidenav__menu-toggle" aria-haspopup="true" aria-label="Open dropdown"><i class="ui-arrow-down"></i></button><ul class="sidenav__menu-dropdown"><li><a href="https://rsudbendan.pekalongankota.go.id/download/laporan-survey-ikm-2025-semester-1.html" class="sidenav__menu-url">SEMESTER I</a></li></ul></li><li><a href="https://rsudbendan.pekalongankota.go.id/upload/file/images_20251125100204.jpeg" class="sidenav__menu-url">GRAFIK SURVEI INDEKS KEPUASAN MASYARAKAT</a></li></ul></li><li><a href="https://rsudbendan.pekalongankota.go.id/halaman/faq.html" class="sidenav__menu-url">FAQ</a></li><li><a href="#" class="sidenav__menu-url">KERJA SAMA RS (SISARASA)</a><button class="sidenav__menu-toggle" aria-haspopup="true" aria-label="Open dropdown"><i class="ui-arrow-down"></i></button><ul class="sidenav__menu-dropdown"><li><a href="https://sisarasa-rsudbendan.pekalongankota.go.id/" class="sidenav__menu-url">Kerja Sama RS</a></li><li><a href="https://sisarasa-rsudbendan.pekalongankota.go.id/mou/Welcome_magang" class="sidenav__menu-url">Diklat Peserta didik</a></li></ul></li>        </ul>
+    </nav>
+    <div class="socials sidenav__socials"> 
+        <a href="https://www.facebook.com/rsud.bendan.35" class="social social-facebook" aria-label="facebook"><i class="ui-facebook"></i></a>        <a href="https://twitter.com/rsudbendan" class="social social-twitter" aria-label="twitter"><i class="ui-twitter"></i></a>        <a href="https://www.instagram.com/rsudbendan" class="social social-instagram" aria-label="instagram"><i class="ui-instagram"></i></a>        <a href="https://www.youtube.com/channel/UC6BAKpPiMSc3PbYp8WRmO9w" class="social social-youtube" aria-label="youtube"><i class="ui-youtube"></i></a>    </div>
+</header>
+        
+        <main class="main oh" id="main">
+            
+            <header class="nav">
+    <div class="nav__holder nav--sticky">
+        <div class="container relative">
+            <div class="flex-parent">
+                <button class="nav-icon-toggle" id="nav-icon-toggle" aria-label="Open side menu">
+                    <span class="nav-icon-toggle__box">
+                        <span class="nav-icon-toggle__inner"></span>
+                    </span>
+                </button> 
+                <a href="https://rsudbendan.pekalongankota.go.id/" class="logo">
+                    <img class="logo__img" src="https://rsudbendan.pekalongankota.go.id/upload/logo/logo_20220413100313.png" style="height:40px;" srcset="https://rsudbendan.pekalongankota.go.id/upload/logo/logo_20220413100313.png 1x, https://rsudbendan.pekalongankota.go.id/upload/logo/logo_20220413100313.png 2x" alt="logo">
+                </a>
+                <nav class="flex-child nav__wrap d-none d-lg-block">              
+                    <ul class="nav__menu">
+                        <li><a href="https://rsudbendan.pekalongankota.go.id/index.html" class="pointer">BERANDA</a></li><li class="nav__dropdown"><a href="#">PROFIL</a><ul class="nav__dropdown-menu"><li><a href="https://rsudbendan.pekalongankota.go.id/halaman/profil-rsud-bendan.html">PROFIL RSUD BENDAN</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/halaman/alamat-dan-sejarah-rsud-bendan.html">SEJARAH RSUD BENDAN</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/upload/file/images_20250602015927.jpg">PROFIL STRUKTURAL</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/halaman/struktur-organisasi.html">STRUKTUR ORGANISASI</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/upload/file/images_20250507110239.jpg">VISI DAN MISI</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/halaman/tugas--fungsi.html">TUGAS DAN FUNGSI</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/halaman/penghargaan-2765.html">PENGHARGAAN</a></li></ul></li><li class="nav__dropdown"><a href="#">PELAYANAN</a><ul class="nav__dropdown-menu"><li><a href="https://rsudbendan.pekalongankota.go.id/halaman/standart-pelayanan-7061.html">STANDART PELAYANAN</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/halaman/maklumat-pelayanan.html">MAKLUMAT PELAYANAN</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/halaman/instalasi-gawat-darurat-igd.html">PELAYANAN INSTALASI GAWAT DARURAT</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/halaman/pelayanan-rawat-jalan.html">PELAYANAN RAWAT JALAN</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/halaman/pelayanan-klinik-eksekutif.html">PELAYANAN EKSEKUTIF</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/halaman/-pelayanan-rawat-inap.html">PELAYANAN RAWAT INAP</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/halaman/pelayanan-penunjang.html">PELAYANAN PENUNJANG</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/download/jadwal-dokter.html">JADWAL DOKTER</a></li></ul></li><li class="nav__dropdown"><a href="#">PENGADUAN</a><ul class="nav__dropdown-menu"><li><a href="https://prod.lapor.go.id/">SP4N LAPOR</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/halaman/sk-pengaduan.html">SK TIM PENGADUAN</a></li><li class="nav__dropdown"><a href="#">FORM PENGADUAN</a><ul class="nav__dropdown-menu"><li><a href="https://rsudbendan.pekalongankota.go.id/">FORM PENERIMAAN PENGADUAN</a></li><li><a href="https://rsudbendan.pekalongankota.go.id//upload/file/file_20241014080603.pdf">FORM PENELAAHAN DAN PENGKLASIFIKASIAN PENGADUAN</a></li><li><a href="https://rsudbendan.pekalongankota.go.id//upload/file/file_20241014080704.pdf">FORM PENYALURAN PENGADUAN</a></li><li><a href="https://rsudbendan.pekalongankota.go.id//upload/file/file_20241014080751.pdf">FORM PENYELESAIAN PENGADUAN</a></li></ul></li><li><a href="https://rsudbendan.pekalongankota.go.id//upload/file/file_20230712034738.pdf">ALUR PENGADUAN</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/halaman/kanal-pengaduan-2932.html">KANAL PENGADUAN</a></li></ul></li><li class="nav__dropdown"><a href="#">PPID</a><ul class="nav__dropdown-menu"><li><a href="https://rsudbendan.pekalongankota.go.id/halaman/profil-ppid-1681.html">PROFIL PPID</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/ppid/index.html">INFORMASI PUBLIK</a></li><li><a href="https://bendanpublic.pekalongankota.go.id/pengaduan/">FORM PERMOHONAN INFORMASI</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/pusaka/index.html">Statistik Sektoral</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/halaman/tata-cara-pengajuan-informasi-dan-keberatan.html">ALUR PERMINTAAN INFORMASI</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/halaman/maklumat-pelayanan-4722.html">MAKLUMAT PELAYANAN PPID</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/datacovid19/index.html">INFORMASI DATA COVID</a></li><li class="nav__dropdown"><a href="#">DIK DAN DIP</a><ul class="nav__dropdown-menu"><li><a href="https://rsudbendan.pekalongankota.go.id/download/daftar-informasi-publik.html">DAFTAR INFORMASI PUBLIK 2025</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/download/sk-dik-2025.html">DAFTAR INFORMASI DI KECUALIKKAN TAHUN 2025</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/download/sk-dip-2024-8911.html">DAFTAR INFORMASI PUBLIK 2024</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/download/sk-dik-2024.html">DAFTAR INFORMASI DI KECUALIKKAN TAHUN 2024</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/download/sk-dik-2023.html">DAFTAR INFORMASI DI KECUALIKKAN TAHUN 2023</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/download/sk-dip-2023-1196.html">DAFTAR INFORMASI PUBLIK 2023</a></li></ul></li><li class="nav__dropdown"><a href="#">SPO LAYANAN INFORMASI PUBLIK</a><ul class="nav__dropdown-menu"><li><a href="https://rsudbendan.pekalongankota.go.id/download/spo-pengumuman-informasi-publik-rsud-bendan.html">SPO PENGUMUMAN INFORMASI PUBLIK</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/download/spo-permintaan-informasi-publik-rsud-bendan.html">SPO PERMINTAAN INFORMASI PUBLIK</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/download/spo-pengajuan-keberatan-informasi-publik-rsud-bendan.html">SPO PENGAJUAN KEBERATAN PUBLIK</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/download/spo-penetapan-dan-pemutakhiran-daftar-informasi-publik-rsud-bendan.html">SPO PENETAPAN & PEMUTAKHIRAN DIP</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/download/spo-pendokumentasian-informasi-publik-rsud-bendan.html">SOP STANDAR PENDOKUMENTASIAN INFORMASI PUBLIK</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/download/spo-maklumat-pelayanan-informasi-publik.html">SOP STANDAR MAKLUMAT PELAYANAN</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/download/spo-pengujian-konsejuensi-informasi-publik-rsud-bendan.html">SPO PENGAJUAN KONSEKUENSI INFORMASI PUBLIK</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/download/spo-permintaan-informasi-bagi-masyarakat-penyadang-disabilitas-melalui-fitur-rekam-suara-rsud-bendan.html">SPO PERMINTAAN INFORMASI BAGI MASYARAKAT PENYADANG DISABILITAS</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/download/spo-fasilitas-sengketa-informasi-publik.html">SPO FASILITAS SENGKETA INFORMASI PUBLIK</a></li></ul></li><li class="nav__dropdown"><a href="#">LAPORAN</a><ul class="nav__dropdown-menu"><li><a href="https://rsudbendan.pekalongankota.go.id/download/laporan-informasi-publik-tahun-2023.html">TAHUN 2023</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/download/laporan-informasi-publik-tahun-2024.html">TAHUN 2024</a></li></ul></li></ul></li><li class="nav__dropdown"><a href="#">INFORMASI</a><ul class="nav__dropdown-menu"><li><a href="https://rsudbendan.pekalongankota.go.id/upload/file/images_20220826085642.jpg">PANDUAN BEMBI NAIK SI BEMO</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/halaman/alur-pendaftaran-pasien-.html">ALUR PENDAFTARAN PASIEN</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/halaman/tarif-pelayanan-rsud-bendan-pekalongan.html">TARIF PELAYANAN</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/download/indikator-mutu-2023.html">INDIKATOR MUTU 2023</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/download/indikator-mutu-2024.html">INDIKATOR MUTU 2024</a></li></ul></li><li class="nav__dropdown"><a href="#">RB</a><ul class="nav__dropdown-menu"><li><a href="https://rsudbendan.pekalongankota.go.id/halaman/reformasi-birokrasi.html">REFORMASI BIROKRASI</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/halaman/program-kerja-zona-integritas.html">ZONA INTEGRITAS</a></li><li><a href="https://bendanpublic.pekalongankota.go.id/zona_integritas/">LAPOR (WBS)</a></li></ul></li><li class="nav__dropdown"><a href="#">SURVEI IKM</a><ul class="nav__dropdown-menu"><li><a href="https://skm.pekalongankota.go.id/">SURVEY KEPUASAN MASYARAKAT</a></li><li class="nav__dropdown"><a href="#">LAPORAN SURVEY IKM PEMKOT 2023</a><ul class="nav__dropdown-menu"><li><a href="https://rsudbendan.pekalongankota.go.id/download/semester-1-skm-pemkot-tahun-2023.html">SEMESTER 1</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/download/	semester-ii-skm-pemkot-tahun-2023.html">SEMESTER II</a></li></ul></li><li class="nav__dropdown"><a href="#">LAPORAN HASIL SURVEI 2023</a><ul class="nav__dropdown-menu"><li><a href="https://rsudbendan.pekalongankota.go.id/download/laporan-hasil-survei-semester-i-tahun-2023.html">SEMESTER I</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/download/laporan-hasil-survei-semester-ii-tahun-2023.html">SEMESTER II</a></li></ul></li><li class="nav__dropdown"><a href="#">LAPORAN SURVEY IKM PEMKOT 2024</a><ul class="nav__dropdown-menu"><li><a href="https://rsudbendan.pekalongankota.go.id/download/semester-1-skm-pemkot-tahun-2024.html">SEMESTER I</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/download/semester-ii-skm-pemkot-tahun-2024.html">SEMESTER II</a></li></ul></li><li class="nav__dropdown"><a href="#">LAPORAN HASIL SURVEI 2024</a><ul class="nav__dropdown-menu"><li><a href="https://rsudbendan.pekalongankota.go.id/download/laporan-hasil-survei-semester-i-tahun-2024.html">SEMESTER I</a></li><li><a href="https://rsudbendan.pekalongankota.go.id/download/laporan-hasil-survei-semester-ii-tahun-2024.html">SEMESTER II</a></li></ul></li><li class="nav__dropdown"><a href="#">LAPORAN SURVEY IKM PEMKOT 2025</a><ul class="nav__dropdown-menu"><li><a href="https://rsudbendan.pekalongankota.go.id/download/laporan-survey-ikm-2025-semester-1.html">SEMESTER I</a></li></ul></li><li><a href="https://rsudbendan.pekalongankota.go.id/upload/file/images_20251125100204.jpeg">GRAFIK SURVEI INDEKS KEPUASAN MASYARAKAT</a></li></ul></li><li><a href="https://rsudbendan.pekalongankota.go.id/halaman/faq.html" class="pointer">FAQ</a></li><li class="nav__dropdown"><a href="#">KERJA SAMA RS (SISARASA)</a><ul class="nav__dropdown-menu"><li><a href="https://sisarasa-rsudbendan.pekalongankota.go.id/">Kerja Sama RS</a></li><li><a href="https://sisarasa-rsudbendan.pekalongankota.go.id/mou/Welcome_magang">Diklat Peserta didik</a></li></ul></li>                    </ul>
+                </nav>
+                <div class="nav__right">
+                    <div class="nav__right-item nav__search">
+                        <a href="#" class="nav__search-trigger" id="nav__search-trigger">
+                            <i class="ui-search nav__search-trigger-icon"></i>
+                        </a>
+                        <div class="nav__search-box" id="nav__search-box">
+                            <form id="frmPencarian" class="nav__search-form">
+                                <input id="tekscari" name="tekscari" type="text" placeholder="Pencarian Berita" class="nav__search-input" required />
+                                <button id="btnCari" type="button" class="search-button btn btn-lg btn-color btn-button">
+                                    <i class="ui-search nav__search-icon"></i>
+                                </button>
+                            </form>
+                        </div>                
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<script>var url_pencarian = "https://rsudbendan.pekalongankota.go.id/" +"pencarian/";$("#btnCari").on("click", function(){if($("#tekscari").val()!==""){window.location.href = url_pencarian+$("#tekscari").val()+".html";}});$('input').keydown(function(event){if(event.keyCode === 13){event.preventDefault();return false;}});</script>
+            
+            <div class="main-container container pt-80 pb-80" id="main-container">
+    <div class="blog__content mb-72">
+        <div class="container text-center">
+            <h1 class="page-404-number">404</h1>
+            <h2>Halaman tidak ditemukan</h2>
+            <p>Maaf, halaman yang Anda cari tidak ada dalam indeks situs kami.</p>
+            <div class="row justify-content-center mt-40">
+                <div class="col-md-6">
+                    <a href="https://rsudbendan.pekalongankota.go.id/" class="btn btn-lg btn-dark mt-40"><span>Kembali ke Beranda</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>            
+            <footer class="footer footer--dark">
+    <div class="container">
+        <div class="footer__widgets">
+            <div class="row">                
+                <div class="col-lg-3 col-md-6">
+                    <aside class="widget widget_nav_menu">
+                        <h4 class="widget-title">Ikuti Kami</h4>
+                        <div class="socials socials--large socials--rounded mb-24">
+                            <a href="https://www.facebook.com/rsud.bendan.35" class="social social-facebook" aria-label="facebook"><i class="ui-facebook"></i></a>                            <a href="https://twitter.com/rsudbendan" class="social social-twitter" aria-label="twitter"><i class="ui-twitter"></i></a>                            <a href="https://www.instagram.com/rsudbendan" class="social social-instagram" aria-label="instagram"><i class="ui-instagram"></i></a>                            <a href="https://www.youtube.com/channel/UC6BAKpPiMSc3PbYp8WRmO9w" class="social social-youtube" aria-label="youtube"><i class="ui-youtube"></i></a>                        </div>
+                        <img src="https://api-pse.layanan.go.id/storage/badge/badge_644.png" alt="" style="width:75%;" />
+                    </aside>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <aside class="widget widget_nav_menu">
+                        <h4 class="widget-title">Link Terkait</h4>
+                        <ul>
+                            <li><a href="https://pekalongankota.go.id/">Pemerintah Kota Pekalongan</a></li><li><a href="https://dinkes.pekalongankota.go.id/">Dinas Kesehatan Kota Pekalongan</a></li><li><a href="https://data.go.id/home">PORTAL SATU DATA</a></li><li><a href="https://datajatengprov.go.id">Portal Satu Data Jawa Tengah</a></li><li><a href="https://pusaka.pekalongankota.go.id/">Portal Satu Data Kota Pekalongan</a></li><li><a href="https://corona.jatengprov.go.id/">Covid-19 Jawa Tengah</a></li><li><a href="https://corona.pekalongankota.go.id/">Covid-19 Kota Pekalongan</a></li>                        </ul>
+                    </aside>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <aside class="widget widget-popular-posts">
+                        <h4 class="widget-title">Berita Terbaru</h4>
+                        <ul class="post-list-small">                            
+                                                        <li class="post-list-small__item">
+                                <article class="post-list-small__entry clearfix">
+                                    <div class="post-list-small__img-holder">
+                                        <div class="thumb-container thumb-100">
+                                            <a href="https://rsudbendan.pekalongankota.go.id/berita/selamat--sukses-atas-pengukuhan-guru-besar.html">
+                                                <img data-src="https://rsudbendan.pekalongankota.go.id/upload/berita/berita_20260127082717.jpg" src="https://rsudbendan.pekalongankota.go.id/upload/berita/berita_20260127082717.jpg" alt="" class="post-list-small__img--rounded lazyload">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="post-list-small__body">
+                                        <h3 class="post-list-small__entry-title">
+                                            <a href="https://rsudbendan.pekalongankota.go.id/berita/selamat--sukses-atas-pengukuhan-guru-besar.html">SELAMAT & SUKSES ATAS PENGUKUHAN GURU BESAR</a>
+                                        </h3>
+                                        <ul class="entry__meta">
+                                            <li class="entry__meta-date">
+                                                27 Januari 2026 [08:26:51]                                            </li>
+                                        </ul>
+                                    </div>                  
+                                </article>
+                            </li>
+                                                        <li class="post-list-small__item">
+                                <article class="post-list-small__entry clearfix">
+                                    <div class="post-list-small__img-holder">
+                                        <div class="thumb-container thumb-100">
+                                            <a href="https://rsudbendan.pekalongankota.go.id/berita/info-layanan-rsud-bendan.html">
+                                                <img data-src="https://rsudbendan.pekalongankota.go.id/upload/berita/berita_20260127075330.jpg" src="https://rsudbendan.pekalongankota.go.id/upload/berita/berita_20260127075330.jpg" alt="" class="post-list-small__img--rounded lazyload">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="post-list-small__body">
+                                        <h3 class="post-list-small__entry-title">
+                                            <a href="https://rsudbendan.pekalongankota.go.id/berita/info-layanan-rsud-bendan.html">INFO LAYANAN RSUD BENDAN</a>
+                                        </h3>
+                                        <ul class="entry__meta">
+                                            <li class="entry__meta-date">
+                                                27 Januari 2026 [07:51:56]                                            </li>
+                                        </ul>
+                                    </div>                  
+                                </article>
+                            </li>
+                                                        
+                        </ul>
+                    </aside>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <aside class="widget widget_mc4wp_form_widget">
+                        <h4 class="widget-title">Kontak Kami</h4>
+                        <p class="newsletter__text">
+                            <i class="ui-pin newsletter__icon"></i>
+                            Jl. Sriwijaya No.2 Bendan, Kec. Pekalongan Barat, Kota Pekalongan, Jawa Tengah 51119                        </p>
+                        <p class="newsletter__text">
+                            <i class="ui-whatsapp newsletter__icon"></i>
+                            WA Pengaduan : 0815-4240-2200 Telepon. (0285) 437222                        </p>
+                        <p class="newsletter__text">
+                            <i class="ui-email newsletter__icon"></i>
+                            rsudbendan.pekalongankota@gmail.com                        </p>     
+                    </aside>
+                    
+                   <!--
+        <table class="statistik-table">
+            <thead class="a">
+                <tr>
+                    <th class="b">Periode</th>
+                    <th class="b">Jumlah Pengunjung</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Hari Ini</td>
+                    <td class="c">451</td>
+                </tr>
+                <tr>
+                    <td>Minggu Ini</td>
+                    <td class="c">1.346</td>
+                </tr>
+                <tr>
+                    <td class="c"> - </td>
+                    <td class="c"> - </td>
+                </tr>
+                <tr>
+                    <td>Januari</td>
+                    <td class="c">11.205</td>
+                </tr>
+                <tr>
+                    <td>Februari</td>
+                    <td class="c">0</td>
+                </tr>
+                <tr>
+                    <td>Maret</td>
+                    <td class="c">0</td>
+                </tr>
+                <tr>
+                    <td>April</td>
+                    <td class="c">0</td>
+                </tr>
+                <tr>
+                    <td>Mei</td>
+                    <td class="c">0</td>
+                </tr>
+                <tr>
+                    <td>Juni</td>
+                    <td class="c">0</td>
+                </tr>
+                <tr>
+                    <td>Juli</td>
+                    <td class="c">0</td>
+                </tr>
+                <tr>
+                    <td>Agustus</td>
+                    <td class="c">0</td>
+                </tr>
+                <tr>
+                    <td>September</td>
+                    <td class="c">0</td>
+                </tr>
+                <tr>
+                    <td>Oktober</td>
+                    <td class="c">0</td>
+                </tr>
+                <tr>
+                    <td>November</td>
+                    <td class="c">0</td>
+                </tr>
+                <tr>
+                    <td>Desember</td>
+                    <td class="c">0</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td class="c"><strong>11.205</strong></td>
+                </tr>
+            </tbody>
+        </table>-->
+                    
+                    
+                </div>
+                
+               
+            </div>
+        </div>
+    </div>
+</footer>
+
+            <style>
+
+a{color:#208B77;}
+#slide-utama-theme{background-color: #208B77;opacity:0.8;}
+.footer--dark{background-color: #208B77;}
+.trending-now__label{background-color:#208B77;}
+.nav__holder{background-color:#208B77;}
+.nav__dropdown-menu > li > a:hover{color:#208B77;}
+.sidenav{background-color:#208B77;}
+.nav--sticky.sticky{background-color:#208B77;}
+.btn-color{background-color:#208B77;}
+.btn-button:hover, .btn-button:focus{background-color:#208B77;}
+input:focus, textarea:focus{border-color:#208B77;}
+.pagination__page--current{background-color:#208B77;}
+.pagination__page:not(span):hover{background-color:#208B77;}
+.tab-post__tabs .tabs__item--active a{color:#208B77;}
+.newsticker__item-url:hover{color:#208B77;}
+.post-list-small__entry-title a:hover, .post-list-small__entry-title a:focus{color:#208B77;}
+.entry__title:hover a{color:#208B77;}
+.newsticker-button:hover{background-color:#208B77;}
+.tab-post__tabs .tabs__item a:hover, .tab-post__tabs .tabs__item a:focus{color:#208B77;}
+#back-to-top:hover{background-color:#208B77;}
+.btn-dark{background-color:#208B77;}
+.btn:hover{background-color:#208B77AD;}
+.sidenav__menu-url:hover, .sidenav__menu-url:focus{color:#000000 !important;}
+.post-list-small--arrows li:before{color:#208B77;}
+
+#slide-utama-theme{color: #FFFFFF !important;}
+.footer--dark .entry__meta li{color: #FFFFFF !important;}
+.footer--dark p{color: #FFFFFF !important;}
+.footer--dark .newsletter__icon{color: #FFFFFF !important;}
+.footer a:not(.social):hover{color: #FFFFFF;}
+.nav__search-trigger{color:#FFFFFF;}
+.nav__right a:hover, .nav__right a:focus{color:#FFFFFF;}
+.nav__menu > li > a:hover{color:#FFFFFF;}
+.nav__menu > li > a:before{background-color:#FFFFFF;}
+.sidenav__menu-url:hover, .sidenav__menu-url:focus{color:#FFFFFF;}
+.sidenav__menu-url{color:#FFFFFF;}
+.nav-icon-toggle:hover .nav-icon-toggle__inner, .nav-icon-toggle:hover .nav-icon-toggle__inner:before, .nav-icon-toggle:hover .nav-icon-toggle__inner:after{background-color:#FFFFFF;}
+.nav__menu > li > a{color:#FFFFFF;}
+.nav-icon-toggle__inner, .nav-icon-toggle__inner:before, .nav-icon-toggle__inner:after{color: #FFFFFF !important;}
+.nav-icon-toggle__inner, .nav-icon-toggle__inner:before, .nav-icon-toggle__inner:after{background-color:#FFFFFF;}
+.sidenav__close-button:hover{color:#FFFFFF;}
+.sidenav__close-button{color:#FFFFFF;}
+</style>
+
+<style>
+    .statistik-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 13px; /* tulisan agak kecil */
+    }
+
+    .statistik-table th,
+    .statistik-table td {
+        border: 1px solid #ddd;
+        padding: 6px 10px;
+    }
+
+    /* header */
+    .statistik-table thead th {
+        background-color: #2c3e50;
+        color: #fff;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    /* zebra strip */
+    .statistik-table tbody tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    /* hover effect */
+    .statistik-table tbody tr:hover {
+        background-color: #f1f1f1;
+    }
+
+    /* khusus td dengan class c */
+    .statistik-table td.c {
+        text-align: center;
+    }
+
+    /* buat total lebih tebal */
+    .statistik-table tbody td strong {
+        font-size: 14px;
+        color: #000;
+    }
+</style>
+
+
+            
+            <div id="back-to-top">
+                <a href="#top" aria-label="Go to top"><i class="ui-arrow-up"></i></a>
+            </div>
+            
+        </main>        
+        <!-- Scripts -->
+        <script src="https://rsudbendan.pekalongankota.go.id/template/frontend/js/easing.min.js"></script>
+        <script src="https://rsudbendan.pekalongankota.go.id/template/frontend/js/owl-carousel.min.js"></script>
+        <script src="https://rsudbendan.pekalongankota.go.id/template/frontend/js/flickity.pkgd.min.js"></script>
+        <script src="https://rsudbendan.pekalongankota.go.id/template/frontend/js/modernizr.min.js"></script>
+        <script src="https://rsudbendan.pekalongankota.go.id/template/frontend/js/scripts.js"></script>
+        <script>console.clear();function showInfo(){var info = "eyJpbmZvIjoiV2Vic2l0ZSBJbmZvcm1hdGlvbiIsImRldGFpbCI6eyJBdXRob3IiOiJBbmdnb3JvIFRyaWFudG9rbyIsIkNvbnRhY3QiOiJhbmdnb3JvLnRyaWFudG9rb0BnbWFpbC5jb20iLCJPZmZpY2UiOiJEaW5hcyBLb211bmlrYXNpICYgSW5mb3JtYXRpa2EgS290YSBQZWthbG9uZ2FuIiwiVHdpdHRlciI6IkBhX3RyaWFudG9rbyJ9fQ==";var json = JSON.parse(window.atob(info));console.group(json.info);for(i in json.detail){console.log(i+"\t:", json.detail[i]);};console.groupEnd();}showInfo();</script>
+<!-- Website Information -->
+<!-- Author  : Anggoro Triantoko -->
+<!-- Contact : anggoro.triantoko@gmail.com -->
+<!-- Office  : Dinas Komunikasi & Informatika Kota Pekalongan -->
+<!-- Twitter  : @a_triantoko -->        <script>(function(){var s = document.createElement("script");s.setAttribute("data-account","DDi6cYXhbN");s.setAttribute("src","https://cdn.userway.org/widget.js");document.body.appendChild(s);})();</script><noscript>Enable JavaScript to ensure <a href="https://userway.org">website accessibility</a></noscript>
+        <script>
+            responsiveVoice.OnVoiceReady = () => {
+                responsiveVoice.speak("Selamat Datang di Website RSUD Bendan Kota Pekalongan", "Indonesian Female", {
+                    pitch: 1, 
+                    rate: 1, 
+                    volume: 1
+                });
+            }
+        </script>
+        
+        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+        
+        <script>
+            const chartData = {"labels":["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"],"series":[11205,0,0,0,0,0,0,0,0,0,0,0],"total_tahun":11205,"tahun":"2026"};
+        
+            const options = {
+                chart: {
+                    type: 'bar',
+                    height: 500
+                },
+                plotOptions: {
+                    bar: {
+                        horizontal: true, // <-- supaya horizontal
+                        borderRadius: 6
+                    }
+                },
+                dataLabels: {
+                    enabled: true,
+                    formatter: function (val) {
+                        return val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+                    }
+                },
+                series: [{
+                    name: 'Jumlah Kunjungan',
+                    data: chartData.series
+                }],
+                xaxis: {
+                    categories: chartData.labels
+                },
+                tooltip: {
+                    y: {
+                        formatter: function (val) {
+                            return val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+                        }
+                    }
+                },
+            };
+        
+            const chart = new ApexCharts(document.querySelector("#chart-kunjungan"), options);
+            chart.render();
+        </script>
+
+
+        
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-MMPR5E5GNR"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'G-MMPR5E5GNR');
+        </script>
+    </body>
+</html>

@@ -482,10 +482,9 @@ $(document).ready(function() {
     // Slider berhenti saat kursor diarahkan ke poster agar pengunjung bisa membaca
     $('.carousel-3d-container').hover(
         function() {
-            clearInterval(autoRotate); // Berhenti saat mouse di atas slider
+            clearInterval(autoRotate); 
         },
         function() {
-            // Mulai kembali saat mouse keluar
             autoRotate = setInterval(() => {
                 $('.carousel-3d-next').click();
             }, 3000);
