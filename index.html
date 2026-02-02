@@ -164,7 +164,6 @@
     </section>
     <!-- Latest News End -->
 
-
     <!-- Team Section Begin -->
     <section class="team spad">
         <div class="container">
@@ -203,6 +202,30 @@
     </section>
     <!-- Team Section End -->
 
+    <!-- Grafik Kunjungan website Section Begin -->
+    <section class="visit-graph spad-small">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4">
+                    <div class="section-title mb-0 text-left">
+                        <h2 style="font-size: 24px;">Statistik kunjungan</h2>
+                        <span style="font-size: 12px;">Data Kunjungan website RSUD Bendan</span>
+                    </div>
+                    <div class="chart-controls mt-3 text-left">
+                        <button class="chart-btn active" data-period="day">Hari</button>
+                        <button class="chart-btn" data-period="month">Bulan</button>
+                        <button class="chart-btn" data-period="year">Tahun</button>
+                    </div>
+                </div>
+                <div class="chart-wrapper-minimal">
+                        <canvas id="visitChart"></canvas>
+                    </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- Grafik Kunjungan website Section End -->
+
 
     <!-- BACK TO TOP BUTTON -->
     <a href="#" class="back-to-top" id="backToTopBtn">
@@ -222,7 +245,7 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </body>
 
 </html>

@@ -3572,3 +3572,54 @@ iframe {
 .about__text ul {
 	padding-left: 18px;
 }
+
+/*---------------------
+  Grafik Minimalis
+-----------------------*/
+.spad-small {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #fafafa;
+}
+
+.chart-wrapper-minimal {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    height: 220px; /* Tinggi dibatasi agar memanjang */
+    width: 100%;
+    position: relative;
+}
+
+.chart-controls .chart-btn {
+    background: transparent;
+    border: 1px solid #13a2b7;
+    color: #13a2b7;
+    padding: 4px 15px;
+    margin-right: 5px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 12px; /* Font lebih kecil */
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.chart-controls .chart-btn.active {
+    background: #13a2b7;
+    color: #ffffff;
+}
+
+/* Responsif */
+@media (max-width: 991px) {
+    .chart-wrapper-minimal {
+        height: 200px;
+        margin-top: 20px;
+    }
+    .visit-graph .section-title {
+        text-align: center;
+    }
+    .chart-controls {
+        text-align: center;
+    }
+}

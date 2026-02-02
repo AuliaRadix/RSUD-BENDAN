@@ -548,5 +548,83 @@ $(document).ready(function () {
     });
 });
 
+/*--------------------------
+    Grafik Kunjungan Website Logic
+----------------------------*/
+$(document).ready(function() {
+    const ctx = document.getElementById('visitChart');
+    if (!ctx) return;
 
+    // Mock Data
+    const chartData = {
+        day: {
+            labels: ['Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu', 'Minggu'],
+            data: [450, 590, 800, 720, 950, 600, 400]
+        },
+        month: {
+            labels: ['Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun', 'Jul', 'Agu', 'Sep', 'Okt', 'Nov', 'Des'],
+            data: [12000, 15000, 14000, 18000, 22000, 19000, 25000, 23000, 21000, 24000, 20000, 28000]
+        },
+        year: {
+            labels: ['2021', '2022', '2023', '2024'],
+            data: [150000, 210000, 285000, 320000]
+        }
+    };
+
+    // Initialize Chart
+    let visitChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: chartData.day.labels,
+            datasets: [{
+                label: 'Jumlah Kunjungan',
+                data: chartData.day.data,
+                backgroundColor: 'rgba(19, 162, 183, 0.1)',
+                borderColor: '#13a2b7',
+                borderWidth: 3,
+                fill: true,
+                tension: 0.4, // Membuat garis melengkung lembut
+                pointBackgroundColor: '#13a2b7',
+                pointRadius: 5,
+                pointHoverRadius: 7
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: { display: false }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    grid: { color: '#f0f0f0' },
+                    ticks: { font: { family: 'Poppins' } }
+                },
+                x: {
+                    grid: { display: false },
+                    ticks: { font: { family: 'Poppins' } }
+                }
+            },
+            interaction: {
+                intersect: false,
+                mode: 'index',
+            }
+        }
+    });
+
+    // Handle Button Clicks
+    $('.chart-btn').on('click', function() {
+        const period = $(this).data('period');
+        
+        // Update active class
+        $('.chart-btn').removeClass('active');
+        $(this).addClass('active');
+
+        // Update Chart Data with animation
+        visitChart.data.labels = chartData[period].labels;
+        visitChart.data.datasets[0].data = chartData[period].data;
+        visitChart.update();
+    });
+});
 
