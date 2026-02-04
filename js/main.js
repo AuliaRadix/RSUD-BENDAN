@@ -322,25 +322,47 @@ window.addEventListener('resize', initSlider);
 /*--------------------------
     Google Drive Direct Download Links
 ----------------------------*/
-document.addEventListener("DOMContentLoaded", function () {
-    // Mengambil semua link di dalam list dokumen
-    const links = document.querySelectorAll('.about__list_document a');
+// function setupDriveLinks() {
 
-    links.forEach(link => {
-        const originalHref = link.getAttribute('href');
+//     const links = document.querySelectorAll('.about__list_document a');
 
-        // Regex untuk mendeteksi ID Google Drive
-        const driveRegex = /\/d\/(.+?)\/(?:view|edit|usp)/;
-        const match = originalHref.match(driveRegex);
+//     links.forEach(link => {
 
-        if (match && match[1]) {
-            const fileId = match[1];
-            // Mengubah href menjadi link direct download
-            const directDownloadUrl = `https://drive.google.com/uc?export=download&id=${fileId}`;
-            link.setAttribute('href', directDownloadUrl);
-        }
-    });
-})
+//         if (link.dataset.driveProcessed) return; // cegah double run
+
+//         const href = link.getAttribute("href");
+//         if (!href) return;
+
+//         if (href.includes("drive.google.com")) {
+
+//             link.target = "_blank";
+//             link.rel = "noopener noreferrer";
+
+//             const match = href.match(/\/d\/([^\/\?]+)/);
+
+//             if (match) {
+//                 link.href =
+//                     `https://drive.google.com/uc?export=download&id=${match[1]}`;
+//             }
+
+//             link.dataset.driveProcessed = "true";
+//         }
+//     });
+// }
+
+
+/* AUTO DETECT jika HTML dimuat ulang / partial */
+const observer = new MutationObserver(setupDriveLinks);
+
+observer.observe(document.body, {
+    childList: true,
+    subtree: true
+});
+
+// run pertama
+setupDriveLinks();
+
+
 
 /*--------------------------
     Pelayanan Modal Logic - Enhanced
@@ -551,7 +573,7 @@ $(document).ready(function () {
 /*--------------------------
     Grafik Kunjungan Website Logic
 ----------------------------*/
-$(document).ready(function() {
+$(document).ready(function () {
     const ctx = document.getElementById('visitChart');
     if (!ctx) return;
 
@@ -614,9 +636,9 @@ $(document).ready(function() {
     });
 
     // Handle Button Clicks
-    $('.chart-btn').on('click', function() {
+    $('.chart-btn').on('click', function () {
         const period = $(this).data('period');
-        
+
         // Update active class
         $('.chart-btn').removeClass('active');
         $(this).addClass('active');
