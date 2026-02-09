@@ -210,79 +210,81 @@
 // ============================================
 
 const slider = document.getElementById('slider');
-let slides = document.querySelectorAll('.slide');
-const prevBtn = document.querySelector('.slider-btn-prev');
-const nextBtn = document.querySelector('.slider-btn-next');
+if (slider) {
+    let slides = document.querySelectorAll('.slide');
+    const prevBtn = document.querySelector('.slider-btn-prev');
+    const nextBtn = document.querySelector('.slider-btn-next');
 
-let index = 1;
-let slideWidth;
-let autoSlide;
+    let index = 1;
+    let slideWidth;
+    let autoSlide;
 
-// Clone first & last slides
-const firstClone = slides[0].cloneNode(true);
-const lastClone = slides[slides.length - 1].cloneNode(true);
-firstClone.id = 'first-clone';
-lastClone.id = 'last-clone';
+    // Clone first & last slides
+    const firstClone = slides[0].cloneNode(true);
+    const lastClone = slides[slides.length - 1].cloneNode(true);
+    firstClone.id = 'first-clone';
+    lastClone.id = 'last-clone';
 
-slider.appendChild(firstClone);
-slider.prepend(lastClone);
-slides = document.querySelectorAll('.slide');
+    slider.appendChild(firstClone);
+    slider.prepend(lastClone);
+    slides = document.querySelectorAll('.slide');
 
-function initSlider() {
-    slideWidth = slides[0].clientWidth;
-    slider.style.transition = 'none';
-    slider.style.transform = `translateX(${-slideWidth * index}px)`;
-}
+    function initSlider() {
+        slideWidth = slides[0].clientWidth;
+        slider.style.transition = 'none';
+        slider.style.transform = `translateX(${-slideWidth * index}px)`;
+    }
 
-function startAutoSlide() {
-    autoSlide = setInterval(() => {
+    function startAutoSlide() {
+        autoSlide = setInterval(() => {
+            if (index >= slides.length - 1) return;
+            index++;
+            slider.style.transition = 'transform 0.5s ease';
+            slider.style.transform = `translateX(${-slideWidth * index}px)`;
+        }, 4000);
+    }
+
+    function resetAutoSlide() {
+        clearInterval(autoSlide);
+        startAutoSlide();
+    }
+
+    window.addEventListener('load', () => {
+        initSlider();
+        startAutoSlide();
+    });
+
+    prevBtn.addEventListener('click', () => {
+        if (index <= 0) return;
+        index--;
+        slider.style.transition = 'transform 0.5s ease';
+        slider.style.transform = `translateX(${-slideWidth * index}px)`;
+        resetAutoSlide();
+    });
+
+    nextBtn.addEventListener('click', () => {
         if (index >= slides.length - 1) return;
         index++;
         slider.style.transition = 'transform 0.5s ease';
         slider.style.transform = `translateX(${-slideWidth * index}px)`;
-    }, 4000);
+        resetAutoSlide();
+    });
+
+    slider.addEventListener('transitionend', () => {
+        if (slides[index].id === 'first-clone') {
+            slider.style.transition = 'none';
+            index = 1;
+            slider.style.transform = `translateX(${-slideWidth * index}px)`;
+        }
+        if (slides[index].id === 'last-clone') {
+            slider.style.transition = 'none';
+            index = slides.length - 2;
+            slider.style.transform = `translateX(${-slideWidth * index}px)`;
+        }
+    });
+
+    window.addEventListener('resize', initSlider);
 }
-
-function resetAutoSlide() {
-    clearInterval(autoSlide);
-    startAutoSlide();
-}
-
-window.addEventListener('load', () => {
-    initSlider();
-    startAutoSlide();
-});
-
-prevBtn.addEventListener('click', () => {
-    if (index <= 0) return;
-    index--;
-    slider.style.transition = 'transform 0.5s ease';
-    slider.style.transform = `translateX(${-slideWidth * index}px)`;
-    resetAutoSlide();
-});
-
-nextBtn.addEventListener('click', () => {
-    if (index >= slides.length - 1) return;
-    index++;
-    slider.style.transition = 'transform 0.5s ease';
-    slider.style.transform = `translateX(${-slideWidth * index}px)`;
-    resetAutoSlide();
-});
-
-slider.addEventListener('transitionend', () => {
-    if (slides[index].id === 'first-clone') {
-        slider.style.transition = 'none';
-        index = 1;
-        slider.style.transform = `translateX(${-slideWidth * index}px)`;
-    }
-    if (slides[index].id === 'last-clone') {
-        slider.style.transition = 'none';
-        index = slides.length - 2;
-        slider.style.transform = `translateX(${-slideWidth * index}px)`;
-    }
-});
-
-window.addEventListener('resize', initSlider);
 // ============================================
 // 5. GOOGLE DRIVE LINKS & UTILITIES
 // ============================================
@@ -362,11 +364,11 @@ function setCopyrightYear() {
 }
 
 // ============================================
-// 8. PPID ZOOM
+// 8. Gambar ZOOM
 // ============================================
 
 $(document).ready(function () {
-    $('.ppid-zoomable').magnificPopup({
+    $('.ppid-zoomable, .infographic-zoom').magnificPopup({
         type: 'image',
         closeOnContentClick: true,
         mainClass: 'mfp-with-zoom',
@@ -569,3 +571,33 @@ $(document).ready(function () {
         visitChart.update();
     });
 });
+
+// ============================================
+// 13. Berita Terkini
+// ============================================
+$(document).ready(function () {
+    // Memberikan efek halus saat memuat komponen berita
+    $('.news-horizontal').each(function(i) {
+        $(this).css({
+            'opacity': '0',
+            'transform': 'translateY(20px)'
+        });
+        setTimeout(() => {
+            $(this).animate({ opacity: 1 }, 500).css('transform', 'translateY(0)');
+        }, i * 100);
+    });
+});
+
+// ============================================
+// 14. Daftar Berita
+// ============================================
+'use strict';
+
+(function ($) {
+    // Inisialisasi saat dokumen siap
+    $(document).ready(function () {
+        // Logika untuk hover atau interaksi berita jika diperlukan
+        console.log("Berita Terkini dimuat dengan sukses.");
+    });
+
+})(jQuery);
