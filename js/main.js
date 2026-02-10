@@ -103,6 +103,18 @@
 
             if (footerElement) {
                 footerElement.innerHTML = footerData;
+
+                // Inisialisasi Peta Leaflet setelah footer dimuat
+                var checkLeaflet = setInterval(function () {
+                    if (typeof L !== 'undefined' && document.getElementById('map')) {
+                        clearInterval(checkLeaflet);
+                        var map = L.map('map').setView([-6.8914744, 109.6615158], 17);
+                        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                        }).addTo(map);
+                        L.marker([-6.8914744, 109.6615158]).addTo(map).bindPopup('<b>RSUD Bendan</b><br>Jl. Sriwijaya No.2, Pekalongan').openPopup();
+                    }
+                }, 100);
             }
         } catch (error) {
             console.error("Gagal memuat komponen:", error);
@@ -577,7 +589,7 @@ $(document).ready(function () {
 // ============================================
 $(document).ready(function () {
     // Memberikan efek halus saat memuat komponen berita
-    $('.news-horizontal').each(function(i) {
+    $('.news-horizontal').each(function (i) {
         $(this).css({
             'opacity': '0',
             'transform': 'translateY(20px)'
@@ -601,3 +613,38 @@ $(document).ready(function () {
     });
 
 })(jQuery);
+
+// ============================================
+// 15. Swiper Pengumuman
+// ============================================
+$(document).ready(function () {
+    if ($('.swiper-pengumuman').length > 0) {
+        var swiperPengumuman = new Swiper(".swiper-pengumuman", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+            },
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+        });
+    }
+});

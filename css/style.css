@@ -3821,3 +3821,26 @@ iframe {
 	color: #ffffff;
 	border-color: #13a2b7;
 }
+
+/* ============================================
+		Swiper Pengumuman
+============================================ */
+.swiper-pengumuman {
+	padding-bottom: 50px;
+}
+
+.swiper-pengumuman .swiper-slide img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	border-radius: 10px;
+}
+
+.swiper-pengumuman .swiper-pagination-bullet-active {
+	background-color: #13a2b7;
+}
+
+.swiper-pengumuman .swiper-button-next,
+.swiper-pengumuman .swiper-button-prev {
+	color: #13a2b7;
+}
