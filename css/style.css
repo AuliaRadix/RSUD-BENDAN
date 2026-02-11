@@ -870,6 +870,26 @@ Hero
 	color: #13a2b7;
 }
 
+/* Button Selection Section */
+.button-selection {
+	padding-bottom: 80px;
+}
+
+.button-selection .primary-btn {
+	margin: 10px;
+	padding: 15px 35px;
+	border-radius: 10px;
+	box-shadow: 0 5px 15px rgba(19, 162, 183, 0.3);
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+
+.button-selection .primary-btn i {
+	margin-right: 10px;
+}
+
 .services .section-title h2 {
 	color: #ffffff;
 }
@@ -2964,7 +2984,7 @@ iframe {
 }
 
 .faq-item.open .faq-answer {
-	max-height: 500px;
+	max-height: 2000px;
 	padding: 18px 24px 22px;
 }
 
